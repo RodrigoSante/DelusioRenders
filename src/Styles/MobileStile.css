@@ -1,0 +1,35 @@
+.nav{
+    background-color: aqua;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+}
+
+.nav .logo-container{
+    align-self: center;
+    margin: 0px 15px 0px 15px;
+    font-size: 1.2rem;
+}
+
+.nav .links-container{
+    background-color: pink;
+    position: absolute;
+    width: 50%;
+    height: calc(100vh - 60px);
+    top: 60px;
+    right: 0px;
+}
+
+.nav .links-container ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.nav .links-container li{
+    font-size: 1.2rem;
+}

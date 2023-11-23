@@ -1,4 +1,5 @@
 import './App.css';
+import './Styles/MobileStile.css';
 import { Routes, Route, Link } from 'react-router-dom';
 
 const Home = () => {
@@ -155,7 +156,7 @@ function App() {
   return (
     <body>
       <header>
-        <div className='nav-container'>
+        <div className='nav'>
           <div className='logo-container'>
             <p>Delusio Logo</p>
           </div>
