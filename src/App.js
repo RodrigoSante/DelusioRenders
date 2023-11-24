@@ -47,23 +47,23 @@ const Home = () => {
 const Projects = () => {
   return(
     <section>
-      <div className='Projects'>
+      <div className='projects'>
         <div className='projects-container1'>
           <p>Te presentamos algunos de nuestros mejores proyectos.</p>
           <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
         </div>
         <div className='projects-container2'>
-          <p>Image 2</p>
+          
         </div>
         <div className='projects-container3'>
-          <p>Cada uno de nuestros diseños es único porque surge de la necesidad 
-            de cada cliente.</p>
+          <p className='tittle'><b>Cada uno de nuestros diseños es único porque surge de la necesidad 
+            de cada cliente.</b></p>
           <p>Algunos números que nos respaldan.</p>
           <div className='info-projects-container'>
-            <p>Casas Unifamiliares con destino residencial +200</p>
-            <p>Locales comerciales +25</p>
-            <p>Edificios Residenciales +5</p>
-            <p>Edificios Comerciales +3</p>
+            <p>Casas Residencial +200 <br/>
+            Locales Comerciales +25 <br/>
+            Edificios Residenciales +5 <br/>
+            Edificios Comerciales +3</p>
           </div>
         </div>
         <div className='projects-container4'>
