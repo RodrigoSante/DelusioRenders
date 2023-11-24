@@ -1,6 +1,8 @@
 import './App.css';
 import './Styles/MobileStile.css';
 import { Routes, Route, Link } from 'react-router-dom';
+import { FiMenu, FiX, FiHome, FiTrello, FiUsers, FiMail } from "react-icons/fi";
+import { openMenu, closeMenu } from './Components/openMenuMobile';
 
 const Home = () => {
   return(
@@ -160,14 +162,21 @@ function App() {
           <div className='logo-container'>
             <p>Delusio Logo</p>
           </div>
-          <div className='links-container'>
+          <div className='links-container' id='menu-mobile'>
+            <div className='close-menu-container' onClick={closeMenu}>
+              <FiX className='close-menu-icon'/>
+            </div>
             <ul>
-              <li><Link to={'/'}>Inicio</Link></li>
-              <li><Link to={'/Projects'}>Proyectos</Link></li>
-              <li><Link to={'/AboutUs'}>Conócenos</Link></li>
-              <li><Link to={'/ContactUs'}>Contáctanos</Link></li>
+              <li><Link to={'/'}><FiHome className='mobile-menu-icons'/>Inicio</Link></li>
+              <li><Link to={'/Projects'}><FiTrello className='mobile-menu-icons'/>Proyectos</Link></li>
+              <li><Link to={'/AboutUs'}><FiUsers className='mobile-menu-icons'/>Conócenos</Link></li>
+              <li><Link to={'/ContactUs'}><FiMail className='mobile-menu-icons'/>Contáctanos</Link></li>
             </ul>
-          </div>    
+            <p className='name'>Delusio Arquitectura</p>
+          </div>   
+          <div className='open-menu-container' onClick={openMenu}>
+            <FiMenu className='open-menu-icon'/>
+          </div> 
         </div>
       </header>
 
