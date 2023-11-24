@@ -1,3 +1,5 @@
+/*Navbar*/
+
 .nav{
     background-color: #a69935;
     position: relative;
@@ -29,14 +31,12 @@
 .nav .links-container{
     background-color: #262100;
     position: absolute;
-    height: calc(100vh - 60px);
+    height: 100vh;
     width: 0%;
-    top: 60px;
     right: 0px;
     border-radius: 1rem 0rem 0rem 1rem;
     transition: all 0.5s;
-    display: flex;
-    flex-direction: column;
+    box-shadow: -5px 0px 15px;
 }
 
 .nav .close-menu-container{
@@ -64,8 +64,13 @@
     margin: 20px 0px;
 }
 
+.nav .links-container a{
+    text-decoration: none;
+}
+
 .nav .links-container a:visited{
     color: #fff;
+    text-decoration: none;
 }
 
 .nav .links-container .mobile-menu-icons{
@@ -80,4 +85,80 @@
     bottom: 30px;
     padding: 10px;
     left: 20px;
+}
+
+/*Footer*/
+
+.footer-contacts{
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 0px 30px 50px #000;
+}
+
+.footer-contacts .logo-footer{
+    align-self: center;
+}
+
+.footer-contacts .footer-locAndPhone{
+    display: flex;
+}
+
+.footer-contacts p{
+    margin: 5px;
+    font-size: 0.75rem;
+}
+
+.footer-contacts .specifications-footer{
+    align-self: center;
+    margin-top: 5px;
+}
+
+/*Home*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home .home-container1{
+    height: 50vh;
+    background-color: #a69935;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.home .home-container1 p{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.home .home-container1 button{
+    background-color: #262100;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 5px 0px;
+    border-radius: 0.4rem;
+    align-self: flex-start;
+    box-shadow: 0px 0px 15px #000;
+    width: 115px;
+}
+
+.home .home-container1 button a{
+    text-decoration: none;
+}
+
+.home .home-container1 button a:visited{
+    color: #fff;
+}
+
+.home .home-container2{
+    height: 50vh;
+    box-shadow: 0px 0px 10px #000;
+    background-image: url(../Images/homeHouse.jpg);
+    background-position: center;
+    background-size: cover;
 }

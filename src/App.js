@@ -3,6 +3,7 @@ import './Styles/MobileStile.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FiMenu, FiX, FiHome, FiTrello, FiUsers, FiMail } from "react-icons/fi";
 import { openMenu, closeMenu } from './Components/openMenuMobile';
+import { HomeContainers } from './Components/homeContainers';
 
 const Home = () => {
   return(
@@ -15,35 +16,29 @@ const Home = () => {
           <button><Link to={'/Projects'}>Proyectos</Link></button>
         </div>
         <div className='home-container2'>
-          <p>Image 1</p>  
-        </div>
-        <div className='home-container3'>
-          <p>Calidad y Eficiencia</p>
-          <p>Imaginamos y creamos espacios únicos de gran calidad y eficiencia 
-              para el confort de tu familia. Queremos acompañarte en esta gran 
-              etapa en tu vida, vamos crear tu lugar en el mundo!</p>
+           
         </div>  
-        <div className='home-container4'>
-          <p>Elegancia</p>
-          <p>Uno de los principales pilares que nos caracteriza es la elegancia 
-            y sofisticación, buscamos explotar al máximo la creatividad en 
-            nuestros diseños, y lo hacemos entendiendo tus necesidades, esto 
-            es algo que nos caracteriza y nos ha llevado a obtener resultados 
-            únicos.</p>
-        </div>
-        <div className='home-container5'>
-          <p>Calidad</p>
-          <p>Trabajamos los materiales más recomendados dentro del mercado 
-            de la construcción, y los combinamos para crear espacios armónicos 
-            para tu comodidad, sin dejar ningún detalle suelto al azar.</p>
-        </div>
-        <div className='home-container6'>
-          <p>Economía</p>
-          <p>La eficiencia es el último pilar dentro de nuestros diseños, 
-            aprovechamos al máximo cada uno de los materiales, cuidamos el medio 
-            ambiente y también los recursos tus recursos a la hora de 
-            tomar decisiones de diseño.</p>
-        </div>
+        <HomeContainers 
+        tittle = 'Elegancia'
+        description = 'Uno de los principales pilares que nos caracteriza es la 
+        elegancia y sofisticación, buscamos explotar al máximo la creatividad en 
+        nuestros diseños, y lo hacemos entendiendo tus necesidades, esto 
+        es algo que nos caracteriza y nos ha llevado a obtener resultados 
+        únicos.'
+        image = 'homeImage1' />
+        <HomeContainers 
+        tittle = 'Calidad'
+        description = 'Trabajamos los materiales más recomendados dentro del mercado 
+        de la construcción, y los combinamos para crear espacios armónicos 
+        para tu comodidad, sin dejar ningún detalle suelto al azar.'
+        image = 'homeImage2' />
+        <HomeContainers 
+        tittle = 'Economía'
+        description = 'La eficiencia es el último pilar dentro de nuestros diseños, 
+        aprovechamos al máximo cada uno de los materiales, cuidamos el medio 
+        ambiente y también los recursos tus recursos a la hora de 
+        tomar decisiones de diseño.'
+        image = 'homeImage3' />
       </div>
     </section>
   )
@@ -167,10 +162,10 @@ function App() {
               <FiX className='close-menu-icon'/>
             </div>
             <ul>
-              <li><Link to={'/'}><FiHome className='mobile-menu-icons'/>Inicio</Link></li>
-              <li><Link to={'/Projects'}><FiTrello className='mobile-menu-icons'/>Proyectos</Link></li>
-              <li><Link to={'/AboutUs'}><FiUsers className='mobile-menu-icons'/>Conócenos</Link></li>
-              <li><Link to={'/ContactUs'}><FiMail className='mobile-menu-icons'/>Contáctanos</Link></li>
+              <li><Link to={'/'} onClick={closeMenu}><FiHome className='mobile-menu-icons'/>Inicio</Link></li>
+              <li><Link to={'/Projects'} onClick={closeMenu}><FiTrello className='mobile-menu-icons'/>Proyectos</Link></li>
+              <li><Link to={'/AboutUs'} onClick={closeMenu}><FiUsers className='mobile-menu-icons'/>Conócenos</Link></li>
+              <li><Link to={'/ContactUs'} onClick={closeMenu}><FiMail className='mobile-menu-icons'/>Contáctanos</Link></li>
             </ul>
             <p className='name'>Delusio Arquitectura</p>
           </div>   
@@ -190,16 +185,20 @@ function App() {
 
       <footer>
         <div className='footer-contacts'>
-          <p>Delusio Logo</p>
-          <p>Ubicación</p>
-          <p>25 de Mayo 792</p>
-          <p>Teléfono</p>
-          <p>+549 381 652 1903</p>
-          <p>email</p>
-          <p>ventas@grupodelusio.com</p>
-          <p>Horarios</p>
-          <p>Lunes a Viernes de 9.00hs a 18.00hs.</p>
-          <p>Ésta página fue creada con fines educativos.</p>
+          <div className='logo-footer'>
+            <p>Delusio Logo</p>
+          </div>
+          <div className='footer-locAndPhone'>
+            <p><u>Ubicación</u>:</p>
+            <p>25 de Mayo 792</p>
+            <p><u>Teléfono</u>:</p>
+            <p>+549 381 652 1903</p>
+          </div>
+          <p><u>Email</u>: ventas@grupodelusio.com</p>
+          <p><u>Horarios</u>: Lunes a Viernes de 9.00hs a 18.00hs.</p>
+          <div className='specifications-footer'>
+            <p>Ésta página fue creada con fines educativos.</p>
+          </div>
         </div>
       </footer>
     </body>
