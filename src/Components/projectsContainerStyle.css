@@ -1,0 +1,16 @@
+.project-one{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 1px;
+    margin: 25px 0px;
+}
+
+.project-one p{
+    margin: 5px 0px; 
+    color: #000;
+}
+
+.project-one img{
+    margin: 20px 0px 0px 0px;
+}

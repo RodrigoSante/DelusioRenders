@@ -4,6 +4,7 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { FiMenu, FiX, FiHome, FiTrello, FiUsers, FiMail } from "react-icons/fi";
 import { openMenu, closeMenu } from './Components/openMenuMobile';
 import { HomeContainers } from './Components/homeContainers';
+import { ProjectsContainer } from './Components/projectsContainers';
 
 const Home = () => {
   return(
@@ -67,11 +68,29 @@ const Projects = () => {
           </div>
         </div>
         <div className='projects-container4'>
-          <p>Proyectos destacados.</p>
-          <p>Image 1</p>
-          <p>Image 2</p>
-          <p>Image 3</p>
-          <p>Image 4</p>
+          <p><b>Proyectos Destacados</b></p>
+          <ProjectsContainer 
+          houseName = 'Casa Natura'
+          presentation = 'Esta casa fue realizada para clientes que aman el contacto 
+          con la naturaleza y los espacios abiertos.'
+          image = 'project-one'/>
+          <ProjectsContainer 
+          houseName = 'Casa de Piedra'
+          presentation = 'En esta obra se utilizaron mayormente materiales naturales 
+          sin revestimiento, tratando de aprovechar las bondades de cada material en 
+          su estado puro.'
+          image = 'project-two'/>
+          <ProjectsContainer 
+          houseName = 'Centro Comercial'
+          presentation = 'Es un conjunto de locales comerciales modernos, atractivos 
+          para todos los clientes, con un diseño llamativo y elegante.'
+          image = 'project-three'/>
+          <ProjectsContainer 
+          houseName = 'Hotel Turistico'
+          presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco,
+          con todas las comodidades y vistas espectaculares, una de nuestras mayores 
+          obras.'
+          image = 'project-four'/>
         </div>
       </div>
     </section>
@@ -155,7 +174,7 @@ function App() {
       <header>
         <div className='nav'>
           <div className='logo-container'>
-            <p>Delusio Logo</p>
+            <p>Delusio Arquitectura</p>
           </div>
           <div className='links-container' id='menu-mobile'>
             <div className='close-menu-container' onClick={closeMenu}>
