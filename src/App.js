@@ -196,7 +196,7 @@ const ContactUS = () => {
         </div>
         <div className='contact-container4'>
           <div className='map-container'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d264.6449762569785!2d-65.20223100679665!3d-26.82009239820194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1700680018933!5m2!1ses!2sar" ></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3284.57426625767!2d-58.40624338305132!3d-34.5896374490086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1701300870007!5m2!1ses!2sar"></iframe>
           </div>
         </div>
       </div>
@@ -251,13 +251,13 @@ function App() {
       <footer>
         <div className='footer-contacts'>
           <div className='logo-footer'>
-            <p>Delusio Logo</p>
+            <p>Delusio Arquitecta</p>
           </div>
           <div className='footer-locAndPhone'>
             <p><u>Ubicación</u>:</p>
-            <p>25 de Mayo 792</p>
+            <p>Austia y Beruti - CABA</p>
             <p><u>Teléfono</u>:</p>
-            <p>+549 381 652 1903</p>
+            <p>+549 011 652 1903</p>
           </div>
           <p><u>Email</u>: ventas@grupodelusio.com</p>
           <p><u>Horarios</u>: Lunes a Viernes de 9.00hs a 18.00hs.</p>
