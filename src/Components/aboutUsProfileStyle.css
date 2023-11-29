@@ -1,0 +1,12 @@
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px 30px 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container img{
+    width: 250px;
+    height: auto;
+}

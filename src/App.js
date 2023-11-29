@@ -5,6 +5,7 @@ import { FiMenu, FiX, FiHome, FiTrello, FiUsers, FiMail } from "react-icons/fi";
 import { openMenu, closeMenu } from './Components/openMenuMobile';
 import { HomeContainers } from './Components/homeContainers';
 import { ProjectsContainer } from './Components/projectsContainers';
+import { AboutUsProfile } from './Components/aboutUsProfile';
 
 const Home = () => {
   return(
@@ -100,33 +101,68 @@ const Projects = () => {
 const AboutUs = () => {
   return(
     <section>
-      <div className='about-us-container1'>
-        <p>Conoce a Nuestro Equipo de Trabajo</p>
-        <button><Link to={'/Projects'}>Proyectos</Link></button>
-        <p>Nuestro equipo es el reflejo de lo que somos, por ende, cada una de 
-          las personas que integran nuestro equipo fue seleccionada no solo por 
-          sus habilidades técnicas, sino también por su honestidad, responsabilidad 
-          y actitud.</p>
-      </div>
-      <div className='about-us-container2'>
-        <p>Image 1</p>
-      </div>
-      <div className='about-us-container3'>
-        <p>Como Trabajamos</p>
-        <p>Trabajamos en conjunto con nuestros clientes para captar su esencia 
-          y generar los diseños que mejor se adaptan a sus necesidades. Podes 
-          contactarte con nosotros por alguno de nuestros canales o podes 
-          enviarnos una solicitud para que nosotros nos pongamos en contacto con 
-          vos! Una a vez que estemos en contacto acordaremos una reunión virtual 
-          o presencial según tu disponibilidad. En esa reunión podremos captar 
-          tu idea, y establecer un presupuesto estimativo.</p>
-        <p>Image 1</p>
-      </div>
-      <div className='about-us-container4'>
-        <p>Conoce a los profesionales detrás de nuestros proyectos</p>
-        <p>Nuestro equipo está conformado por 6 personas</p>
-        <p>Image</p>
-        <p>Descripción</p>
+      <div className='aboutus'>
+        <div className='about-us-container1'>
+          <p>Nuestro equipo es el reflejo de lo que somos, por ende, cada una de 
+            las personas que integran nuestro equipo fue seleccionada no solo por 
+            sus habilidades técnicas, sino también por su honestidad, responsabilidad 
+            y actitud.</p>
+            <button><Link to={'/Projects'}>Proyectos</Link></button>
+        </div>
+        <div className='about-us-container2'>
+          
+        </div>
+        <div className='about-us-container3'>
+          <p><b>Como Trabajamos</b></p>
+          <p>Trabajamos en conjunto con nuestros clientes para captar su esencia 
+            y generar los diseños que mejor se adaptan a sus necesidades. Podes 
+            contactarte con nosotros por alguno de nuestros canales o podes 
+            enviarnos una solicitud para que nosotros nos pongamos en contacto con 
+            vos! Una a vez que estemos en contacto acordaremos una reunión virtual 
+            o presencial según tu disponibilidad. En esa reunión podremos captar 
+            tu idea, y establecer un presupuesto estimativo.</p>
+          <img src={require('./Images/aboutUsImage2.jpg')}></img>
+        </div>
+        <div className='about-us-container4'>
+          <p className='tittle'><b>Conoce a los profesionales detrás de nuestros proyectos</b></p>
+          <p>Nuestro equipo está conformado por 6 personas</p>
+          <AboutUsProfile 
+          profile = 'profile1'
+          name = 'Mario Duarte'
+          profession = 'Arquitecto - UNLP' 
+          position = 'Representante Legal y Fundador'
+          position_two = 'Docente UNLP'/>
+          <AboutUsProfile 
+          profile = 'profile2'
+          name = 'María Salvatierra'
+          profession = 'Arquitecta - UBA' 
+          position = 'Jefa de Proyectos'
+          position_two = 'Docente UBA'/>
+          <AboutUsProfile 
+          profile = 'profile3'
+          name = 'Natalia Ibarra'
+          profession = 'Arquitecta - UBA' 
+          position = 'Diseño de Interiores y Equipamiento'
+          position_two = ''/>
+          <AboutUsProfile 
+          profile = 'profile4'
+          name = 'Sergio Ortega'
+          profession = 'Arquitecto - UNLaM' 
+          position = 'Renderista'
+          position_two = ''/>
+          <AboutUsProfile 
+          profile = 'profile5'
+          name = 'Juan Lopez'
+          profession = 'Arquitecto - UCA' 
+          position = 'Proyectista'
+          position_two = 'Docente UCA'/>
+          <AboutUsProfile 
+          profile = 'profile6'
+          name = 'Estefania Martinez'
+          profession = 'Arquitecto - UBA' 
+          position = 'Proyectista'
+          position_two = 'Docente UBA'/>
+        </div>
       </div>
     </section>
   )
@@ -135,23 +171,33 @@ const AboutUs = () => {
 const ContactUS = () => {
   return(
     <section>
-      <div className='contact-container1'>
-        <p>Contáctanos</p>
-        <button><Link to={'/'}>Volver al Inicio</Link></button>
-        <p>Te ofrecemos nuestros contactos, podes contactarnos por cualquiera 
-          de nuestros medios, o rellena el formulario y te contactaremos 
-          nosotros.</p>
-      </div>
-      <div className='contact-container2'>
-        <p>Image1</p>
-      </div>
-      <div className='contact-container3'>
-        <p>Formulario de Contacto</p>
-        <p>Contact Form</p>
-      </div>
-      <div className='contact-container4'>
-        <div className='map-container'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d264.6449762569785!2d-65.20223100679665!3d-26.82009239820194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1700680018933!5m2!1ses!2sar" ></iframe>
+      <div className='contact'>
+        <div className='contact-container1'>
+          <p>Te ofrecemos nuestros contactos, podes contactarnos por cualquiera 
+            de nuestros medios, o rellena el formulario y te contactaremos 
+            nosotros.</p>
+          <button><Link to={'/AboutUs'}>Conócenos</Link></button>
+          <button><Link to={'/'}>Volver al Inicio</Link></button>
+        </div>
+        <div className='contact-container2'>
+         
+        </div>
+        <div className='contact-container3'>
+          <p><b>Formulario de Contacto</b></p>
+          <form>
+            <label>Nombre</label>
+            <input type="text" name="user_name" />
+            <label>Email</label>
+            <input type="email" name="user_email" />
+            <label>Mensaje</label>
+            <textarea name="message" />
+            <input className='buttom' type="submit" value="Enviar" />
+          </form>
+        </div>
+        <div className='contact-container4'>
+          <div className='map-container'>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d264.6449762569785!2d-65.20223100679665!3d-26.82009239820194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1700680018933!5m2!1ses!2sar" ></iframe>
+          </div>
         </div>
       </div>
     </section>
