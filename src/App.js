@@ -13,7 +13,7 @@ const Home = () => {
     <section>
       <div className='home'>
         <div className='home-container1'>
-          <p className='tittle'>Arquitectura Innovadora, Soluciones Intemporales</p>
+          <p className='tittle'>Arquitectura Innovadora,<br/> Soluciones Intemporales</p>
           <p>Somos un estudio de arquitectura, dedicado al diseño y dirección 
             de proyectos unifamiliares, multifamiliares y comerciales.</p>
           <div className='buttons'>
