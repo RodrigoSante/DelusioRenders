@@ -11,3 +11,31 @@
     height: auto;
     margin: 20px 0px;
 }
+
+@media(min-width: 721px){
+    .home-container{
+        height: 100vh;
+        padding: 0px 100px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .home-container.reverce{
+        flex-direction: row-reverse;
+    }
+    
+    .home-container .tittle{
+        margin: 10px 30px;
+        position: absolute;
+        color: #a69935;
+        font-size: 5rem;
+        top: 130px;
+        left: 350px;
+    }
+    
+    .home-container img{
+        margin: 20px 0px;
+        max-height: 400px;
+    }
+}

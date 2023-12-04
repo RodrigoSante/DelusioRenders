@@ -1,5 +1,5 @@
 export function openMenu(){
-    document.getElementById('menu-mobile').style.width = '50%';
+    document.getElementById('menu-mobile').style.width = '200px';
 }
 
 export function closeMenu(){

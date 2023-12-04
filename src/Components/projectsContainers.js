@@ -5,7 +5,7 @@ export function ProjectsContainer(props){
         <div className='project-one'>
             <p><b>{props.houseName}</b></p>
             <p>{props.presentation}</p>
-            <img src={require(`../Images/${props.image}.jpg`)}></img>
+            <img src={require(`../Images/${props.image}.webp`)}></img>
         </div>
     );
 }

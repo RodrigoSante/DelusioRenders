@@ -1,5 +1,6 @@
 import './App.css';
-import './Styles/MobileStile.css';
+import './Styles/MobileStyle.css';
+import './Styles/PcStyle.css';
 import { Routes, Route, Link } from 'react-router-dom';
 import { FiMenu, FiX, FiHome, FiTrello, FiUsers, FiMail } from "react-icons/fi";
 import { openMenu, closeMenu } from './Components/openMenuMobile';
@@ -12,34 +13,31 @@ const Home = () => {
     <section>
       <div className='home'>
         <div className='home-container1'>
+          <p className='tittle'>Arquitectura Innovadora, Soluciones Intemporales</p>
           <p>Somos un estudio de arquitectura, dedicado al diseño y dirección 
             de proyectos unifamiliares, multifamiliares y comerciales.</p>
-          <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
-          <button><Link to={'/Projects'}>Proyectos</Link></button>
+          <div className='buttons'>
+            <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
+            <button><Link to={'/Projects'}>Proyectos</Link></button>
+          </div>
         </div>
         <div className='home-container2'>
            
         </div>  
-        <HomeContainers 
+        <HomeContainers
+        className = 'left'
         tittle = 'Elegancia'
-        description = 'Uno de los principales pilares que nos caracteriza es la 
-        elegancia y sofisticación, buscamos explotar al máximo la creatividad en 
-        nuestros diseños, y lo hacemos entendiendo tus necesidades, esto 
-        es algo que nos caracteriza y nos ha llevado a obtener resultados 
-        únicos.'
+        description = 'Uno de los principales pilares que nos caracteriza es la elegancia y sofisticación, buscamos explotar al máximo la creatividad en nuestros diseños, y lo hacemos entendiendo tus necesidades, esto es algo que nos caracteriza y nos ha llevado a obtener resultados únicos.'
         image = 'homeImage1' />
-        <HomeContainers 
+        <HomeContainers
+        className = 'right'
         tittle = 'Calidad'
-        description = 'Trabajamos los materiales más recomendados dentro del mercado 
-        de la construcción, y los combinamos para crear espacios armónicos 
-        para tu comodidad, sin dejar ningún detalle suelto al azar.'
+        description = 'Trabajamos los materiales más recomendados dentro del mercado de la construcción, y los combinamos para crear espacios armónicos para tu comodidad, sin dejar ningún detalle suelto al azar.'
         image = 'homeImage2' />
-        <HomeContainers 
+        <HomeContainers
+        className = 'left'
         tittle = 'Economía'
-        description = 'La eficiencia es el último pilar dentro de nuestros diseños, 
-        aprovechamos al máximo cada uno de los materiales, cuidamos el medio 
-        ambiente y también los recursos tus recursos a la hora de 
-        tomar decisiones de diseño.'
+        description = 'La eficiencia es el último pilar dentro de nuestros diseños, aprovechamos al máximo cada uno de los materiales, cuidamos el medio ambiente y también los recursos tus recursos a la hora de tomar decisiones de diseño.'
         image = 'homeImage3' />
       </div>
     </section>
@@ -51,6 +49,7 @@ const Projects = () => {
     <section>
       <div className='projects'>
         <div className='projects-container1'>
+          <p className='tittle'>Una imagen habla por sí misma</p>
           <p>Te presentamos algunos de nuestros mejores proyectos.</p>
           <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
         </div>
@@ -69,28 +68,22 @@ const Projects = () => {
           </div>
         </div>
         <div className='projects-container4'>
-          <p><b>Proyectos Destacados</b></p>
+          <p className='tittle'><b>Proyectos Destacados</b></p>
           <ProjectsContainer 
           houseName = 'Casa Natura'
-          presentation = 'Esta casa fue realizada para clientes que aman el contacto 
-          con la naturaleza y los espacios abiertos.'
+          presentation = 'Esta casa fue realizada para clientes que aman el contacto con la naturaleza y los espacios abiertos.'
           image = 'project-one'/>
           <ProjectsContainer 
           houseName = 'Casa de Piedra'
-          presentation = 'En esta obra se utilizaron mayormente materiales naturales 
-          sin revestimiento, tratando de aprovechar las bondades de cada material en 
-          su estado puro.'
+          presentation = 'En esta obra se utilizaron mayormente materiales naturales sin revestimiento, tratando de aprovechar las bondades de cada material en su estado puro.'
           image = 'project-two'/>
           <ProjectsContainer 
           houseName = 'Centro Comercial'
-          presentation = 'Es un conjunto de locales comerciales modernos, atractivos 
-          para todos los clientes, con un diseño llamativo y elegante.'
+          presentation = 'Es un conjunto de locales comerciales modernos, atractivos para todos los clientes, con un diseño llamativo y elegante.'
           image = 'project-three'/>
           <ProjectsContainer 
           houseName = 'Hotel Turistico'
-          presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco,
-          con todas las comodidades y vistas espectaculares, una de nuestras mayores 
-          obras.'
+          presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco, con todas las comodidades y vistas espectaculares, una de nuestras mayores obras.'
           image = 'project-four'/>
         </div>
       </div>
@@ -101,13 +94,12 @@ const Projects = () => {
 const AboutUs = () => {
   return(
     <section>
-      <div className='aboutus'>
+      <div className='aboutUs'>
         <div className='about-us-container1'>
-          <p>Nuestro equipo es el reflejo de lo que somos, por ende, cada una de 
-            las personas que integran nuestro equipo fue seleccionada no solo por 
-            sus habilidades técnicas, sino también por su honestidad, responsabilidad 
-            y actitud.</p>
-            <button><Link to={'/Projects'}>Proyectos</Link></button>
+          <p className='tittle'>Confianza inspirada, servicios entregados</p>
+          <p>Cada una de las personas que integran nuestro equipo fue seleccionada
+             por su honestidad, responsabilidad y actitud.</p>
+          <button><Link to={'/Projects'}>Proyectos</Link></button>
         </div>
         <div className='about-us-container2'>
           
@@ -121,7 +113,7 @@ const AboutUs = () => {
             vos! Una a vez que estemos en contacto acordaremos una reunión virtual 
             o presencial según tu disponibilidad. En esa reunión podremos captar 
             tu idea, y establecer un presupuesto estimativo.</p>
-          <img src={require('./Images/aboutUsImage2.jpg')}></img>
+          <img src={require('./Images/aboutUsImage2.webp')}></img>
         </div>
         <div className='about-us-container4'>
           <p className='tittle'><b>Conoce a los profesionales detrás de nuestros proyectos</b></p>
@@ -173,11 +165,14 @@ const ContactUS = () => {
     <section>
       <div className='contact'>
         <div className='contact-container1'>
+          <p className='tittle'>¡Estaremos encantados de conocerte!</p>
           <p>Te ofrecemos nuestros contactos, podes contactarnos por cualquiera 
             de nuestros medios, o rellena el formulario y te contactaremos 
             nosotros.</p>
-          <button><Link to={'/AboutUs'}>Conócenos</Link></button>
-          <button><Link to={'/'}>Volver al Inicio</Link></button>
+          <div className='buttons'>
+            <button><Link to={'/AboutUs'}>Conócenos</Link></button>
+            <button><Link to={'/'}>Volver al Inicio</Link></button>
+          </div>
         </div>
         <div className='contact-container2'>
          
@@ -222,7 +217,7 @@ function App() {
           <div className='logo-container'>
             <p>Delusio Arquitectura</p>
           </div>
-          <div className='links-container' id='menu-mobile'>
+          <div className='links-container-mobile' id='menu-mobile'>
             <div className='close-menu-container' onClick={closeMenu}>
               <FiX className='close-menu-icon'/>
             </div>
@@ -234,6 +229,14 @@ function App() {
             </ul>
             <p className='name'>Delusio Arquitectura</p>
           </div>   
+          <div className='links-container-pc' id='menu-pc'>
+            <ul>
+              <li><Link to={'/'}><FiHome className='mobile-menu-icons'/>Inicio</Link></li>
+              <li><Link to={'/Projects'}><FiTrello className='mobile-menu-icons'/>Proyectos</Link></li>
+              <li><Link to={'/AboutUs'}><FiUsers className='mobile-menu-icons'/>Conócenos</Link></li>
+              <li><Link to={'/ContactUs'}><FiMail className='mobile-menu-icons'/>Contáctanos</Link></li>
+            </ul>
+          </div>
           <div className='open-menu-container' onClick={openMenu}>
             <FiMenu className='open-menu-icon'/>
           </div> 

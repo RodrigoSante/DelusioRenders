@@ -8,43 +8,49 @@
     height: 60px;
     width: 100%;
     position: fixed;
+    z-index: 1000;
 }
 
-.nav .logo-container{
+.logo-container{
     align-self: center;
     margin: 0px 15px 0px 15px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    color: #fff;
 }
 
-.nav .open-menu-container{
+.open-menu-container{
     display: flex;
     margin-right: 20px;
 }
 
-.nav .open-menu-icon{
+.open-menu-icon{
     width: 30px;
     height: auto;
     color: #fff;
     cursor: pointer;
 }
 
-.nav .links-container{
+.links-container-pc{
+    display: none;
+}
+
+.links-container-mobile{
     background-color: #262100;
     position: absolute;
     height: 100vh;
     width: 0%;
     right: 0px;
     border-radius: 1rem 0rem 0rem 1rem;
-    transition: all 0.5s;
     box-shadow: -5px 0px 15px;
+    transition: all 0.5s;
 }
 
-.nav .close-menu-container{
+.close-menu-container{
     display: flex;
     justify-content: end;
 }
 
-.nav .close-menu-icon{
+.close-menu-icon{
     width: 30px;
     height: auto;
     color: #fff;
@@ -52,39 +58,39 @@
     cursor: pointer;
 }
 
-.nav .links-container ul{
+.links-container-mobile ul{
     display: flex;
     flex-direction: column;
     justify-content: start;
+    white-space: nowrap;
 }
 
-.nav .links-container li{
-    font-size: 1rem;
+.links-container-mobile li{
     color: #fff;
     margin: 20px 0px;
 }
 
-.nav .links-container a{
+.links-container-mobile a{
     text-decoration: none;
 }
 
-.nav .links-container a:visited{
+.links-container-mobile a:visited{
     color: #fff;
     text-decoration: none;
 }
 
-.nav .links-container .mobile-menu-icons{
-    margin-right: 15px;
+.links-container-mobile .mobile-menu-icons{
+    margin-right: 10px;
 }
 
-.name{
-    font-size: 1rem;
+.links-container-mobile .name{
+    font-size: 0.85rem;
+    width: 100%;
     color: #fff;
-    text-align: center;
     position: absolute;
     bottom: 30px;
-    padding: 10px;
-    left: 20px;
+    white-space: nowrap;
+    margin-left: 35px;
 }
 
 /*Footer*/
@@ -92,13 +98,14 @@
 .footer-contacts{
     background-color: #ececec;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 15px;
     box-shadow: 0px 30px 50px #000;
 }
 
 .footer-contacts .logo-footer{
-    align-self: center;
+    width: 100%;
+    text-align: center;
 }
 
 .footer-contacts .footer-locAndPhone{
@@ -111,7 +118,8 @@
 }
 
 .footer-contacts .specifications-footer{
-    align-self: center;
+    width: 100%;
+    text-align: center;
     margin-top: 5px;
 }
 
@@ -120,9 +128,12 @@
 .home{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
-.home .home-container1{
+.home-container1{
+    position: relative;
+    top: 60px;
     height: 50vh;
     background-color: #a69935;
     display: flex;
@@ -131,12 +142,23 @@
     padding: 0px 30px;
 }
 
-.home .home-container1 p{
-    margin-top: 60px;
-    margin-bottom: 20px;
+.home-container1 .tittle{
+    font-size: 1.3rem;
+    color: #fff;
 }
 
-.home .home-container1 button{
+.home-container1 p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.home-container1 .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.home-container1 button{
     background-color: #262100;
     color: #fff;
     padding: 10px 15px;
@@ -147,24 +169,26 @@
     width: 115px;
 }
 
-.home .home-container1 button a{
+.home-container1 button a{
     text-decoration: none;
 }
 
-.home .home-container1 button a:visited{
+.home-container1 button a:visited{
     color: #fff;
 }
 
-.home .home-container2{
+.home-container2{
     height: 50vh;
     box-shadow: 0px 0px 10px #000;
-    background-image: url(../Images/homeHouse.jpg);
+    background-image: url(../Images/homeHouse.webp);
     background-position: center;
     background-size: cover;
 }
 
 /*Projects*/
-.projects .projects-container1{
+.projects-container1{
+    position: relative;
+    top: 60px;
     background-color: #a69935;
     height: 50vh;
     display: flex;
@@ -173,11 +197,17 @@
     padding: 0px 30px;
 }
 
-.projects .projects-container1 p{
-    margin: 20px 0px;
+.projects-container1 .tittle{
+    font-size: 1.3rem;
+    color: #fff;
 }
 
-.projects .projects-container1 button{
+.projects-container1 p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.projects-container1 button{
     background-color: #262100;
     color: #fff;
     padding: 10px 15px;
@@ -188,17 +218,17 @@
     width: 115px;
 }
 
-.projects .projects-container1 button a{
+.projects-container1 button a{
     text-decoration: none;
 }
 
-.projects .projects-container1 button a:visited{
+.projects-container1 button a:visited{
     color: #fff;
 }
 
 .projects-container2{
     height: 50vh;
-    background-image: url('../Images/projectsImage1.jpg');
+    background-image: url('../Images/projectsImage1.webp');
     box-shadow: 0px 0px 10px #000;
     background-position: center;
     background-size: cover;
@@ -217,6 +247,7 @@
 
 .projects-container3 .tittle{
     color: #a69935;
+    font-size: 1.3rem;
 }
 
 .projects-container3 .info-projects-container{
@@ -238,13 +269,20 @@
     color: #a69935;
 }
 
+.projects-container4 .tittle{
+    font-size: 1.3rem;
+}
+
 /*About US*/
-.aboutus{
+.aboutUs{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .about-us-container1{
+    position: relative;
+    top: 60px;
     background-color: #a69935;
     height: 50vh;
     display: flex;
@@ -253,8 +291,13 @@
     padding: 0px 30px 0px 30px;
 }
 
+.about-us-container1 .tittle{
+    font-size: 1.3rem;
+}
+
 .about-us-container1 p{
-    margin: 20px 0px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .about-us-container1 button{
@@ -278,7 +321,7 @@
 
 .about-us-container2{
     height: 50vh;
-    background-image: url('../Images/aboutUsImage.jpg');
+    background-image: url('../Images/aboutUsImage.webp');
     box-shadow: 0px 0px 10px #000;
     background-position: center;
     background-size: cover;
@@ -314,6 +357,7 @@
 
 .about-us-container4 .tittle{
     color: #a69935;
+    font-size: 1.3rem;
 }
 
 /*Contacts*/
@@ -321,19 +365,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
 }
 
 .contact-container1{
     background-color: #a69935;
+    position: relative;
+    top: 60px;
     height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0px 30px;
+    color: #fff;
+}
+
+.contact-container1 .tittle{
+    font-size: 1.3rem;
 }
 
 .contact-container1 p{
-    margin: 20px 0px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-container1 .buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
 }
 
 .contact-container1 button{
@@ -357,7 +416,7 @@
 
 .contact-container2{
     height: 50vh;
-    background-image: url('../Images/contactImage.jpg');
+    background-image: url('../Images/contactImage.webp');
     box-shadow: 0px 0px 10px #000;
     background-position: center;
     background-size: cover;
@@ -374,6 +433,7 @@
     text-align: center;
     margin: 20px 0px;
     color: #a69935;
+    font-size: 1.3rem;
 }
 
 .contact-container3 form{
@@ -388,6 +448,7 @@
 
 .contact-container3 form label{
     margin: 5px 0px;
+    color: #fff;
 }
 
 .contact-container3 form input{
@@ -411,6 +472,7 @@
     cursor: pointer;
     width: 90px;
     height: auto;
+    box-shadow: 1px 1px 10px #000;
 }
 
 .contact-container4{
