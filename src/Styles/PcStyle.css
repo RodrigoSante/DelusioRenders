@@ -60,6 +60,7 @@
 
     /*Home*/
     .home-container1{
+        top: 80px;
         height: 80vh;
     }
 
@@ -89,5 +90,57 @@
     .home-container2{
         height: 120vh;
         margin-bottom: 100px;
+    }
+
+    /*Projects*/
+    .projects-container1{
+        top: 80px;
+        height: 80vh;
+    }
+
+    .projects-container1 .tittle{
+        font-size: 4rem;
+    }
+
+    .projects-container1 p{
+        font-size: 1.1rem;
+    }
+
+    .projects-container1 button{
+        font-size: 1.1rem;
+        width: 135px;
+    }
+
+    .projects-container1 button:hover{
+        background-color: #615a1b;
+        transition: all 0.3s;
+        box-shadow: 1px 1px 5px #f2df53;
+    }
+
+    .projects-container2{
+        height: 120vh;
+    }
+
+    .projects-container3 .tittle{
+        font-size: 1.5rem;
+    }
+
+    .projects-container3 .info-projects-container{
+        width: 300px;
+    }
+
+    .projects-container4{
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 30px 30px;
+    }
+
+    .projects-container4 .tittle{
+        font-size: 1.5rem;
+        width: 100%;
+        margin-bottom: 40px;
     }
 }

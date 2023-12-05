@@ -71,19 +71,19 @@ const Projects = () => {
           <p className='tittle'><b>Proyectos Destacados</b></p>
           <ProjectsContainer 
           houseName = 'Casa Natura'
-          presentation = 'Esta casa fue realizada para clientes que aman el contacto con la naturaleza y los espacios abiertos.'
+          presentation = 'Esta casa fue realizada para clientes que aman el contacto con la naturaleza y los espacios abiertos. La iluminación y la ventilación que deja el paso del aire puro son la clave de este proyecto.'
           image = 'project-one'/>
           <ProjectsContainer 
           houseName = 'Casa de Piedra'
-          presentation = 'En esta obra se utilizaron mayormente materiales naturales sin revestimiento, tratando de aprovechar las bondades de cada material en su estado puro.'
+          presentation = 'En esta obra se utilizaron mayormente materiales naturales sin revestimiento, tratando de aprovechar las bondades de cada material en su estado puro, para generar el menor impacto ambiental.'
           image = 'project-two'/>
           <ProjectsContainer 
           houseName = 'Centro Comercial'
-          presentation = 'Es un conjunto de locales comerciales modernos, atractivos para todos los clientes, con un diseño llamativo y elegante.'
+          presentation = 'Es un conjunto de locales comerciales modernos, atractivos para todos los clientes, con un diseño llamativo y elegante, en armonía con el entorno.'
           image = 'project-three'/>
           <ProjectsContainer 
           houseName = 'Hotel Turistico'
-          presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco, con todas las comodidades y vistas espectaculares, una de nuestras mayores obras.'
+          presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco, con todas las comodidades y vistas espectaculares, uno de nuestros mejores proyectos.'
           image = 'project-four'/>
         </div>
       </div>

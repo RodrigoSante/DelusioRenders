@@ -14,3 +14,19 @@
 .project-one img{
     margin: 20px 0px 0px 0px;
 }
+
+@media(min-width: 980px){
+    .project-one{
+        width: 40%;
+        margin: 20px;
+    }
+
+    .project-one p{
+        margin: 10px;
+    }
+
+    .project-one img{
+        height: 75%;
+        width: auto;
+    }
+}
