@@ -143,4 +143,55 @@
         width: 100%;
         margin-bottom: 40px;
     }
+
+    /*About US*/
+    .about-us-container1{
+        top: 80px;
+        height: 80vh;
+    }
+
+    .about-us-container1 .tittle{
+        font-size: 4rem;
+    }
+
+    .about-us-container1 p{
+        font-size: 1.1rem;
+    }
+
+    .about-us-container1 button{
+        font-size: 1.1rem;
+        width: 125px;
+    }
+
+    .about-us-container1 button:hover{
+        background-color: #615a1b;
+        transition: all 0.3s;
+        box-shadow: 1px 1px 5px #f2df53;
+    }
+
+    .about-us-container2{
+        height: 120vh;
+    }
+
+    .about-us-container3 .tittle{
+        font-size: 1.5rem;
+        margin: 100px 0px 0px 0px;
+    }
+
+    .about-us-container3 p{
+        margin: 20px 100px 100px 100px;
+    }
+
+    .about-us-container4{
+        flex-direction: initial;
+        flex-wrap: wrap;
+    }
+
+    .about-us-container4 p{
+        width: 100%;
+    }
+
+    .about-us-container4 .tittle{
+        width: 100%;
+    }
 }

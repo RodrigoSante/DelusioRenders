@@ -96,7 +96,7 @@ const AboutUs = () => {
     <section>
       <div className='aboutUs'>
         <div className='about-us-container1'>
-          <p className='tittle'>Confianza inspirada, servicios entregados</p>
+          <p className='tittle'>Confianza inspirada, <br />servicios entregados</p>
           <p>Cada una de las personas que integran nuestro equipo fue seleccionada
              por su honestidad, responsabilidad y actitud.</p>
           <button><Link to={'/Projects'}>Proyectos</Link></button>
@@ -105,7 +105,7 @@ const AboutUs = () => {
           
         </div>
         <div className='about-us-container3'>
-          <p><b>Como Trabajamos</b></p>
+          <p className='tittle'><b>Como Trabajamos</b></p>
           <p>Trabajamos en conjunto con nuestros clientes para captar su esencia 
             y generar los diseños que mejor se adaptan a sus necesidades. Podes 
             contactarte con nosotros por alguno de nuestros canales o podes 
@@ -147,7 +147,7 @@ const AboutUs = () => {
           name = 'Juan Lopez'
           profession = 'Arquitecto - UCA' 
           position = 'Proyectista'
-          position_two = 'Docente UCA'/>
+          position_two = 'Docente UCA - Docente UADE'/>
           <AboutUsProfile 
           profile = 'profile6'
           name = 'Estefania Martinez'

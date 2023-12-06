@@ -334,12 +334,14 @@
     margin-top: 50px;
 }
 
-.about-us-container3 p{
+.about-us-container3 .tittle{
     margin: 10px 0px;
+    color: #a69935;
+    font-size: 1.3rem;
 }
 
-.about-us-container3 img{
-    box-shadow: 1px 1px 5px #000;
+.about-us-container3 p{
+    margin: 10px 30px;
 }
 
 .about-us-container4{
