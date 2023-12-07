@@ -442,40 +442,46 @@
 .contact-container3 form{
     display: flex;
     flex-direction: column;
-    background-color: #a69935;
     padding: 40px 25px 10px 25px;
-    box-shadow: 1px 1px 15px #000;
+    box-shadow: 1px 1px 5px #000;
     margin: 10px 0px;
     border-radius: 0.5rem;
 }
 
 .contact-container3 form label{
     margin: 5px 0px;
-    color: #fff;
+    color: #000;
 }
 
 .contact-container3 form input{
     border-radius: 0.2rem;
     height: 25px;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #a69935;
 }
 
 .contact-container3 form textarea{
     border-radius: 0.2rem;
+    border-bottom-style: solid;
+    border-width: 1px;
+    border-color: #a69935;
     resize: none;
     height: 80px;
 }
 
 .contact-container3 form .buttom{
-    background-color: #262100;
-    color: #fff;
+    border-style: solid;
+    border-color: #262100;
+    border-width: 2px;
+    color: #000;
     align-self: center;
     padding: 10px 15px;
     margin: 20px 0px;
     border-radius: 0.4rem;
     cursor: pointer;
-    width: 90px;
+    width: 100px;
     height: auto;
-    box-shadow: 1px 1px 10px #000;
 }
 
 .contact-container4{
