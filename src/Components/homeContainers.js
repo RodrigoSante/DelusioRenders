@@ -4,6 +4,7 @@ export function HomeContainers (props){
     return(
         <div className={`home-container ${props.className === 'right' ? 'reverse' : ''}`}>
           <div className='container-tittle'>
+            <p className='tittle'><b>{props.tittle}</b></p>
             <p>{props.description}</p>
           </div>
           <div className='container-img'>

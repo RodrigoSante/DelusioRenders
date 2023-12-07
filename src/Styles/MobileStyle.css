@@ -354,11 +354,13 @@
 
 .about-us-container4 p{
     margin: 10px 0px;
+    padding: 0px 20px;
 }
 
 .about-us-container4 .tittle{
     color: #a69935;
     font-size: 1.3rem;
+    padding: 0pc 20px;
 }
 
 /*Contacts*/

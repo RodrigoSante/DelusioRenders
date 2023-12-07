@@ -12,6 +12,10 @@
     margin: 20px 0px;
 }
 
+.home-container .container-img .tittle{
+    display: none;
+}
+
 @media(min-width: 980px){
     .home-container{
         padding: 50px 50px;
@@ -23,6 +27,14 @@
         width: 50%;
         font-size: 1.1rem;
         padding-top: 70px;
+    }
+
+    .home-container .container-tittle .tittle{
+        display: none;
+    }
+
+    .home-container .container-img .tittle{
+        display: block;
     }
 
     .home-container .container-img{

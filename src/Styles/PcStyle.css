@@ -194,4 +194,108 @@
     .about-us-container4 .tittle{
         width: 100%;
     }
+
+    /*Contacts*/
+    .contact{
+    }
+
+    .contact-container1{
+        top: 80px;
+        height: 80vh;
+    }
+
+    .contact-container1 .tittle{
+        font-size: 4rem;
+    }
+
+    .contact-container1 p{
+        font-size: 1.1rem;
+    }
+
+    .contact-container1 .buttons{
+        width: 350px;
+    }
+
+    .contact-container1 button{
+        font-size: 1.1rem;
+        width: 165px;
+    }
+
+    .contact-container1 button:hover{
+        background-color: #615a1b;
+        transition: all 0.3s;
+        box-shadow: 1px 1px 5px #f2df53;
+    }
+
+    .contact-container2{
+        height: 120vh;
+    }
+
+    .contact-container3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 20px 0px 20px;
+    }
+
+    .contact-container3 p{
+        text-align: center;
+        margin: 20px 0px;
+        color: #a69935;
+        font-size: 1.3rem;
+    }
+
+    .contact-container3 form{
+        display: flex;
+        flex-direction: column;
+        background-color: #a69935;
+        padding: 40px 25px 10px 25px;
+        box-shadow: 1px 1px 15px #000;
+        margin: 10px 0px;
+        border-radius: 0.5rem;
+    }
+
+    .contact-container3 form label{
+        margin: 5px 0px;
+        color: #fff;
+    }
+
+    .contact-container3 form input{
+        border-radius: 0.2rem;
+        height: 25px;
+    }
+
+    .contact-container3 form textarea{
+        border-radius: 0.2rem;
+        resize: none;
+        height: 80px;
+    }
+
+    .contact-container3 form .buttom{
+        background-color: #262100;
+        color: #fff;
+        align-self: center;
+        padding: 10px 15px;
+        margin: 20px 0px;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        width: 90px;
+        height: auto;
+        box-shadow: 1px 1px 10px #000;
+    }
+
+    .contact-container4{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .contact-container4 .map-container{
+        width: 100%;
+    }
+
+    .contact-container4 .map-container iframe{
+        width: 100%;
+        height: 300px;
+    }
 }
