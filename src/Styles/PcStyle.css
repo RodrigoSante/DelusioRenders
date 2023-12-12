@@ -270,11 +270,24 @@
 
     .contact-container4{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 100px;
+        margin-top: 50px;
         width: 60%;
         height: 80vh;
+    }
+
+    .contact-container4 .info{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .contact-container4 .tittle{
+        font-size: 1.5rem;
+        color: #a69935;
+        margin: 15px 0px;
     }
 
     .contact-container4 .map-container{
@@ -285,6 +298,6 @@
 
     .contact-container4 .map-container iframe{
         width: 90%;
-        height: 450px;
+        height: 300px;
     }
 }

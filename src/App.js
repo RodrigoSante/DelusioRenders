@@ -190,8 +190,18 @@ const ContactUS = () => {
           </form>
         </div>
         <div className='contact-container4'>
+          <div className='info'>
+            <p className='tittle'>
+              ¡Queremos conocerte! 
+            </p>
+            <p>
+              Rellena el formulario con tus datos, nombre y apellido, tu dirección de corro
+              electrónico y en el espacio de mensaje tu consulta y te contactaremos al mail 
+              que no hayas proporcionado.
+            </p>
+          </div>
           <div className='map-container'>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3284.57426625767!2d-58.40624338305132!3d-34.5896374490086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1701300870007!5m2!1ses!2sar"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.1435229194631!2d-58.406763731600215!3d-34.58964186520683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1702410131991!5m2!1ses!2sar"></iframe>
           </div>
         </div>
       </div>
@@ -258,7 +268,7 @@ function App() {
           </div>
           <div className='footer-locAndPhone'>
             <p><u>Ubicación</u>:</p>
-            <p>Austia y Beruti - CABA</p>
+            <p>Austria y Beruti - CABA</p>
             <p><u>Teléfono</u>:</p>
             <p>+549 011 652 1903</p>
           </div>
