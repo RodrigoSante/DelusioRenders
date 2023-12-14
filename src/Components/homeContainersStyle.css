@@ -18,7 +18,7 @@
 
 @media(min-width: 980px){
     .home-container{
-        padding: 50px 50px;
+        padding: 75px 50px;
         display: flex;
         align-items: center;
     }

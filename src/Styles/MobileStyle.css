@@ -132,7 +132,7 @@
 
 .home-container1{
     position: relative;
-    top: 60px;
+    top: 20px;
     height: 50vh;
     background-color: #a69935;
     display: flex;
@@ -144,17 +144,14 @@
 .home-container1 .tittle{
     font-size: 1.3rem;
     color: #fff;
-}
-
-.home-container1 p{
-    margin-bottom: 20px;
-    color: #fff;
+    margin: 10px 0px;
 }
 
 .home-container1 .buttons{
     display: flex;
     justify-content: space-between;
     width: 240px;
+    margin-top: 20px
 }
 
 .home-container1 button{
@@ -486,8 +483,19 @@
 
 .contact-container4{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 50px;
+}
+
+.contact-container4 .info{
+    padding: 30px;
+}
+
+.contact-container4 .tittle{
+    font-size: 1.3rem;
+    color: #a69935;
+    margin: 15px 0px;
 }
 
 .contact-container4 .map-container{

@@ -7,34 +7,44 @@ import { openMenu, closeMenu } from './Components/openMenuMobile';
 import { HomeContainers } from './Components/homeContainers';
 import { ProjectsContainer } from './Components/projectsContainers';
 import { AboutUsProfile } from './Components/aboutUsProfile';
+import { motion } from 'framer-motion';
+import TypeWriteHome from './Components/typeWriter.js';
 
 const Home = () => {
   return(
     <section>
       <div className='home'>
-        <div className='home-container1'>
+        <motion.div className='home-container1'
+          initial={{ translateY: -250 }}
+          whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
+          viewport={{ once: true }}>
           <p className='tittle'>Arquitectura Innovadora,<br/> Soluciones Intemporales</p>
-          <p>Somos un estudio de arquitectura, dedicado al diseño y dirección 
-            de proyectos unifamiliares, multifamiliares y comerciales.</p>
+          <TypeWriteHome />
           <div className='buttons'>
             <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
             <button><Link to={'/Projects'}>Proyectos</Link></button>
           </div>
-        </div>
-        <div className='home-container2'>
-           
-        </div>  
+        </motion.div>
+        <motion.div className='home-container2'
+          initial={{ rotate: 5 }}
+          whileInView={{ rotate: -5, transition: { type: 'just', velocity: 20 } }}
+          viewport={{ once: true }}>
+
+        </motion.div>  
         <HomeContainers
+        value= '-150'
         className = 'left'
         tittle = 'Elegancia'
         description = 'Uno de los principales pilares que nos caracteriza es la elegancia y sofisticación, buscamos explotar al máximo la creatividad en nuestros diseños, y lo hacemos entendiendo tus necesidades, esto es algo que nos caracteriza y nos ha llevado a obtener resultados únicos.'
         image = 'homeImage1' />
         <HomeContainers
+        value= '150'
         className = 'right'
         tittle = 'Calidad'
         description = 'Trabajamos los materiales más recomendados dentro del mercado de la construcción, y los combinamos para crear espacios armónicos para tu comodidad, sin dejar ningún detalle suelto al azar.'
         image = 'homeImage2' />
         <HomeContainers
+        value= '-150'
         className = 'left'
         tittle = 'Economía'
         description = 'La eficiencia es el último pilar dentro de nuestros diseños, aprovechamos al máximo cada uno de los materiales, cuidamos el medio ambiente y también los recursos tus recursos a la hora de tomar decisiones de diseño.'
@@ -48,15 +58,23 @@ const Projects = () => {
   return(
     <section>
       <div className='projects'>
-        <div className='projects-container1'>
+        <motion.div className='projects-container1'
+          initial={{ translateY: -250 }}
+          whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
+          viewport={{ once: true }}>
           <p className='tittle'>Una imagen habla por sí misma</p>
           <p>Te presentamos algunos de nuestros mejores proyectos.</p>
           <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
-        </div>
-        <div className='projects-container2'>
+        </motion.div>
+        <motion.div className='projects-container2'
+          initial={{ rotate: 5 }}
+          whileInView={{ rotate: -5, transition: { type: 'just', velocity: 20 } }}
+          viewport={{ once: true }}>
           
-        </div>
-        <div className='projects-container3'>
+        </motion.div>
+        <motion.div className='projects-container3'
+          initial={{ opacity: 0.25 }}
+          whileInView={{ opacity: 1, transition: { duration: 0.9 } }}>
           <p className='tittle'><b>Cada uno de nuestros diseños es único porque surge de la necesidad 
             de cada cliente.</b></p>
           <p>Algunos números que nos respaldan.</p>
@@ -66,7 +84,7 @@ const Projects = () => {
             Edificios Residenciales +5 <br/>
             Edificios Comerciales +3</p>
           </div>
-        </div>
+        </motion.div>
         <div className='projects-container4'>
           <p className='tittle'><b>Proyectos Destacados</b></p>
           <ProjectsContainer 
@@ -95,15 +113,21 @@ const AboutUs = () => {
   return(
     <section>
       <div className='aboutUs'>
-        <div className='about-us-container1'>
+        <motion.div className='about-us-container1'
+          initial={{ translateY: -250 }}
+          whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
+          viewport={{ once: true }}>
           <p className='tittle'>Confianza inspirada, <br />servicios entregados</p>
           <p>Cada una de las personas que integran nuestro equipo fue seleccionada
              por su honestidad, responsabilidad y actitud.</p>
           <button><Link to={'/Projects'}>Proyectos</Link></button>
-        </div>
-        <div className='about-us-container2'>
+        </motion.div>
+        <motion.div className='about-us-container2'
+          initial={{ rotate: 5  }}
+          whileInView={{  rotate: -5, transition: { type: 'just', velocity: 20 } }}
+          viewport={{ once: true }}>
           
-        </div>
+        </motion.div>
         <div className='about-us-container3'>
           <p className='tittle'><b>Como Trabajamos</b></p>
           <p>Trabajamos en conjunto con nuestros clientes para captar su esencia 
@@ -164,7 +188,17 @@ const ContactUS = () => {
   return(
     <section>
       <div className='contact'>
-        <div className='contact-container1'>
+        <motion.div className='contact-container1'
+          initial={{ translateY: -250,
+          }}
+          whileInView={{ translateY: 0,
+          transition: {
+            duration: 0.9
+            },
+          }}
+          viewport={{ 
+            once: true
+          }}>
           <p className='tittle'>¡Estaremos encantados de conocerte!</p>
           <p>Te ofrecemos nuestros contactos, podes contactarnos por cualquiera 
             de nuestros medios, o rellena el formulario y te contactaremos 
@@ -173,10 +207,23 @@ const ContactUS = () => {
             <button><Link to={'/AboutUs'}>Conócenos</Link></button>
             <button><Link to={'/'}>Volver al Inicio</Link></button>
           </div>
-        </div>
-        <div className='contact-container2'>
+        </motion.div>
+        <motion.div className='contact-container2'
+          initial={{
+            rotate: 5,
+          }}
+          whileInView={{
+            rotate: -5,
+              transition: {
+              type: 'just',
+              velocity: 20
+            },
+          }}
+          viewport={{ 
+            once: true 
+          }}>
          
-        </div>
+        </motion.div>
         <div className='contact-container3'>
           <p><b>Formulario de Contacto</b></p>
           <form>

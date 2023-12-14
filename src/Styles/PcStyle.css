@@ -68,12 +68,9 @@
         font-size: 4rem;
     }
 
-    .home-container1 p{
-        font-size: 1.1rem;
-    }
-
     .home-container1 .buttons{
         width: 290px;
+        margin-top: 20px;
     }
 
     .home-container1 button{
