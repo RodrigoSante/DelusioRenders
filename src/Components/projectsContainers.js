@@ -5,7 +5,7 @@ export function ProjectsContainer(props){
     return(
         <motion.div className='project-one'
             initial={{ y: props.y }}
-            whileInView= {{ y:0, transition: { type: 'spring', duration: 2 } }}
+            whileInView= {{ y:0, transition: { type: 'spring', duration: 2.5 } }}
             viewport={{ once: true }}>
             <p><b>{props.houseName}</b></p>
             <p>{props.presentation}</p>

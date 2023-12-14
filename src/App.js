@@ -89,7 +89,7 @@ const Projects = () => {
           houseName = 'Casa Natura'
           presentation = 'Esta casa fue realizada para clientes que aman el contacto con la naturaleza y los espacios abiertos. La iluminación y la ventilación que deja el paso del aire puro son la clave de este proyecto.'
           image = 'project-one'
-          y = '200' />
+          y = '400' />
           <ProjectsContainer 
           houseName = 'Casa de Piedra'
           presentation = 'En esta obra se utilizaron mayormente materiales naturales sin revestimiento, tratando de aprovechar las bondades de cada material en su estado puro, para generar el menor impacto ambiental.'
@@ -99,7 +99,7 @@ const Projects = () => {
           houseName = 'Centro Comercial'
           presentation = 'Es un conjunto de locales comerciales modernos, atractivos para todos los clientes, con un diseño llamativo y elegante, en armonía con el entorno.'
           image = 'project-three'
-          y = '200' />
+          y = '400' />
           <ProjectsContainer 
           houseName = 'Hotel Turistico'
           presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco, con todas las comodidades y vistas espectaculares, uno de nuestros mejores proyectos.'
@@ -129,7 +129,10 @@ const AboutUs = () => {
           viewport={{ once: true }}>
           
         </motion.div>
-        <div className='about-us-container3'>
+        <motion.div className='about-us-container3'
+          initial={{ opacity:0.25 }}
+          whileInView={{ opacity:1, transition: { duration: 1.5 } }}
+          viewport={{ once: true }}>
           <p className='tittle'><b>Como Trabajamos</b></p>
           <p>Trabajamos en conjunto con nuestros clientes para captar su esencia 
             y generar los diseños que mejor se adaptan a sus necesidades. Podes 
@@ -139,7 +142,7 @@ const AboutUs = () => {
             o presencial según tu disponibilidad. En esa reunión podremos captar 
             tu idea, y establecer un presupuesto estimativo.</p>
           <img src={require('./Images/aboutUsImage2.webp')}></img>
-        </div>
+        </motion.div>
         <div className='about-us-container4'>
           <p className='tittle'><b>Conoce a los profesionales detrás de nuestros proyectos</b></p>
           <p>Nuestro equipo está conformado por 6 personas</p>
@@ -148,37 +151,43 @@ const AboutUs = () => {
           name = 'Mario Duarte'
           profession = 'Arquitecto - UNLP' 
           position = 'Representante Legal y Fundador'
-          position_two = 'Docente UNLP'/>
+          position_two = 'Docente UNLP'
+          x = '-1000' />
           <AboutUsProfile 
           profile = 'profile2'
           name = 'María Salvatierra'
           profession = 'Arquitecta - UBA' 
           position = 'Jefa de Proyectos'
-          position_two = 'Docente UBA'/>
+          position_two = 'Docente UBA'
+          x = '1000' />
           <AboutUsProfile 
           profile = 'profile3'
           name = 'Natalia Ibarra'
           profession = 'Arquitecta - UBA' 
           position = 'Diseño de Interiores y Equipamiento'
-          position_two = ''/>
+          position_two = ''
+          x = '-1000' />
           <AboutUsProfile 
           profile = 'profile4'
           name = 'Sergio Ortega'
           profession = 'Arquitecto - UNLaM' 
           position = 'Renderista'
-          position_two = ''/>
+          position_two = ''
+          x = '1000' />
           <AboutUsProfile 
           profile = 'profile5'
           name = 'Juan Lopez'
           profession = 'Arquitecto - UCA' 
           position = 'Proyectista'
-          position_two = 'Docente UCA - Docente UADE'/>
+          position_two = 'Docente UCA - Docente UADE'
+          x = '-1000' />
           <AboutUsProfile 
           profile = 'profile6'
           name = 'Estefania Martinez'
           profession = 'Arquitecto - UBA' 
           position = 'Proyectista'
-          position_two = 'Docente UBA'/>
+          position_two = 'Docente UBA'
+          x = '1000' />
         </div>
       </div>
     </section>
@@ -208,22 +217,15 @@ const ContactUS = () => {
           </div>
         </motion.div>
         <motion.div className='contact-container2'
-          initial={{
-            rotate: 5,
-          }}
-          whileInView={{
-            rotate: -5,
-              transition: {
-              type: 'just',
-              velocity: 20
-            },
-          }}
-          viewport={{ 
-            once: true 
-          }}>
+          initial={{ rotate: 5 }}
+          whileInView={{ rotate: -5, transition: { type: 'just', velocity: 20 } }}
+          viewport={{ once: true }}>
          
         </motion.div>
-        <div className='contact-container3'>
+        <motion.div className='contact-container3'
+          initial={{ opacity: 0.25 }}
+          whileInView={{ opacity: 1, transition: { duration: 1, delay: 0.5 } }}
+          viewport={{ once: true }}>
           <p><b>Formulario de Contacto</b></p>
           <form>
             <label>Nombre</label>
@@ -234,8 +236,11 @@ const ContactUS = () => {
             <textarea name="message" />
             <input className='buttom' type="submit" value="Enviar" />
           </form>
-        </div>
-        <div className='contact-container4'>
+        </motion.div>
+        <motion.div className='contact-container4'
+          initial={{ opacity: 0.25 }}
+          whileInView={{ opacity: 1, transition: { duration: 2, delay: 0.5 } }}
+          viewport={{ once: true }}>
           <div className='info'>
             <p className='tittle'>
               ¡Queremos conocerte! 
@@ -249,7 +254,7 @@ const ContactUS = () => {
           <div className='map-container'>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d821.1435229194631!2d-58.406763731600215!3d-34.58964186520683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1702410131991!5m2!1ses!2sar"></iframe>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )
