@@ -8,7 +8,7 @@ import { HomeContainers } from './Components/homeContainers';
 import { ProjectsContainer } from './Components/projectsContainers';
 import { AboutUsProfile } from './Components/aboutUsProfile';
 import { motion } from 'framer-motion';
-import TypeWriteHome from './Components/typeWriter.js';
+import { TypeWriteAboutUs, TypeWriteContact, TypeWriteHome, TypeWriteProjects, TypeWriteProjectsInfo } from './Components/typeWrite.js';
 
 const Home = () => {
   return(
@@ -63,7 +63,7 @@ const Projects = () => {
           whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
           viewport={{ once: true }}>
           <p className='tittle'>Una imagen habla por sí misma</p>
-          <p>Te presentamos algunos de nuestros mejores proyectos.</p>
+          <TypeWriteProjects />
           <button><Link to={'/ContactUS'}>Contáctanos</Link></button>
         </motion.div>
         <motion.div className='projects-container2'
@@ -74,15 +74,13 @@ const Projects = () => {
         </motion.div>
         <motion.div className='projects-container3'
           initial={{ opacity: 0.25 }}
-          whileInView={{ opacity: 1, transition: { duration: 0.9 } }}>
+          whileInView={{ opacity: 1, transition: { duration: 2 } }}
+          viewport={{ once: true }}>
           <p className='tittle'><b>Cada uno de nuestros diseños es único porque surge de la necesidad 
             de cada cliente.</b></p>
           <p>Algunos números que nos respaldan.</p>
           <div className='info-projects-container'>
-            <p>Casas Residencial +200 <br/>
-            Locales Comerciales +25 <br/>
-            Edificios Residenciales +5 <br/>
-            Edificios Comerciales +3</p>
+            <TypeWriteProjectsInfo />
           </div>
         </motion.div>
         <div className='projects-container4'>
@@ -90,19 +88,23 @@ const Projects = () => {
           <ProjectsContainer 
           houseName = 'Casa Natura'
           presentation = 'Esta casa fue realizada para clientes que aman el contacto con la naturaleza y los espacios abiertos. La iluminación y la ventilación que deja el paso del aire puro son la clave de este proyecto.'
-          image = 'project-one'/>
+          image = 'project-one'
+          y = '200' />
           <ProjectsContainer 
           houseName = 'Casa de Piedra'
           presentation = 'En esta obra se utilizaron mayormente materiales naturales sin revestimiento, tratando de aprovechar las bondades de cada material en su estado puro, para generar el menor impacto ambiental.'
-          image = 'project-two'/>
+          image = 'project-two'
+          y = '1000' />
           <ProjectsContainer 
           houseName = 'Centro Comercial'
           presentation = 'Es un conjunto de locales comerciales modernos, atractivos para todos los clientes, con un diseño llamativo y elegante, en armonía con el entorno.'
-          image = 'project-three'/>
+          image = 'project-three'
+          y = '200' />
           <ProjectsContainer 
           houseName = 'Hotel Turistico'
           presentation = 'Un lugar paradisiaco dentro de otro lugar paradisiaco, con todas las comodidades y vistas espectaculares, uno de nuestros mejores proyectos.'
-          image = 'project-four'/>
+          image = 'project-four'
+          y = '1000' />
         </div>
       </div>
     </section>
@@ -118,8 +120,7 @@ const AboutUs = () => {
           whileInView={{ translateY: 0, transition: { duration: 0.9 } }}
           viewport={{ once: true }}>
           <p className='tittle'>Confianza inspirada, <br />servicios entregados</p>
-          <p>Cada una de las personas que integran nuestro equipo fue seleccionada
-             por su honestidad, responsabilidad y actitud.</p>
+          <TypeWriteAboutUs />
           <button><Link to={'/Projects'}>Proyectos</Link></button>
         </motion.div>
         <motion.div className='about-us-container2'
@@ -200,9 +201,7 @@ const ContactUS = () => {
             once: true
           }}>
           <p className='tittle'>¡Estaremos encantados de conocerte!</p>
-          <p>Te ofrecemos nuestros contactos, podes contactarnos por cualquiera 
-            de nuestros medios, o rellena el formulario y te contactaremos 
-            nosotros.</p>
+          <TypeWriteContact />
           <div className='buttons'>
             <button><Link to={'/AboutUs'}>Conócenos</Link></button>
             <button><Link to={'/'}>Volver al Inicio</Link></button>

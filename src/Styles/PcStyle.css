@@ -99,13 +99,10 @@
         font-size: 4rem;
     }
 
-    .projects-container1 p{
-        font-size: 1.1rem;
-    }
-
     .projects-container1 button{
         font-size: 1.1rem;
         width: 135px;
+        margin-top: 20px;
     }
 
     .projects-container1 button:hover{
